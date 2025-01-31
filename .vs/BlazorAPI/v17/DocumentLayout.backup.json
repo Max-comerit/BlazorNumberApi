@@ -7,6 +7,18 @@
       "RelativeMoniker": "D:0:0:{FB41CD6A-AB17-4C6E-8C3F-56C7D7FC1725}|BlazorAPI\\BlazorAPI.csproj|solutionrelative:blazorapi\\components\\numbersearchcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FB41CD6A-AB17-4C6E-8C3F-56C7D7FC1725}|BlazorAPI\\BlazorAPI.csproj|c:\\repon\\opf_r - newton\\demo\\blazornumberapi\\blazorapi\\models\\numbermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB41CD6A-AB17-4C6E-8C3F-56C7D7FC1725}|BlazorAPI\\BlazorAPI.csproj|solutionrelative:blazorapi\\models\\numbermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB41CD6A-AB17-4C6E-8C3F-56C7D7FC1725}|BlazorAPI\\BlazorAPI.csproj|c:\\repon\\opf_r - newton\\demo\\blazornumberapi\\blazorapi\\pages\\numbersearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FB41CD6A-AB17-4C6E-8C3F-56C7D7FC1725}|BlazorAPI\\BlazorAPI.csproj|solutionrelative:blazorapi\\pages\\numbersearch.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB41CD6A-AB17-4C6E-8C3F-56C7D7FC1725}|BlazorAPI\\BlazorAPI.csproj|c:\\repon\\opf_r - newton\\demo\\blazornumberapi\\blazorapi\\service\\apikeyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB41CD6A-AB17-4C6E-8C3F-56C7D7FC1725}|BlazorAPI\\BlazorAPI.csproj|solutionrelative:blazorapi\\service\\apikeyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FB41CD6A-AB17-4C6E-8C3F-56C7D7FC1725}|BlazorAPI\\BlazorAPI.csproj|c:\\repon\\opf_r - newton\\demo\\blazornumberapi\\blazorapi\\service\\numberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FB41CD6A-AB17-4C6E-8C3F-56C7D7FC1725}|BlazorAPI\\BlazorAPI.csproj|solutionrelative:blazorapi\\service\\numberservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -26,8 +38,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NumberModel.cs",
+              "DocumentMoniker": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Models\\NumberModel.cs",
+              "RelativeDocumentMoniker": "BlazorAPI\\Models\\NumberModel.cs",
+              "ToolTip": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Models\\NumberModel.cs",
+              "RelativeToolTip": "BlazorAPI\\Models\\NumberModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:38:45.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NumberSearch.razor",
+              "DocumentMoniker": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Pages\\NumberSearch.razor",
+              "RelativeDocumentMoniker": "BlazorAPI\\Pages\\NumberSearch.razor",
+              "ToolTip": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Pages\\NumberSearch.razor",
+              "RelativeToolTip": "BlazorAPI\\Pages\\NumberSearch.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-31T15:38:06.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiKeyHandler.cs",
+              "DocumentMoniker": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Service\\ApiKeyHandler.cs",
+              "RelativeDocumentMoniker": "BlazorAPI\\Service\\ApiKeyHandler.cs",
+              "ToolTip": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Service\\ApiKeyHandler.cs",
+              "RelativeToolTip": "BlazorAPI\\Service\\ApiKeyHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T15:36:11.242Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -36,39 +87,40 @@
               "RelativeDocumentMoniker": "BlazorAPI\\Components\\NumberSearchComponent.razor",
               "ToolTip": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Components\\NumberSearchComponent.razor",
               "RelativeToolTip": "BlazorAPI\\Components\\NumberSearchComponent.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-31T15:27:40.231Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "NumberService.cs",
               "DocumentMoniker": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Service\\NumberService.cs",
               "RelativeDocumentMoniker": "BlazorAPI\\Service\\NumberService.cs",
               "ToolTip": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Service\\NumberService.cs",
               "RelativeToolTip": "BlazorAPI\\Service\\NumberService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwEkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-25T20:15:15.605Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Program.cs",
               "RelativeDocumentMoniker": "BlazorAPI\\Program.cs",
               "ToolTip": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Program.cs",
               "RelativeToolTip": "BlazorAPI\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-25T20:38:16.241Z"
+              "WhenOpened": "2025-01-25T20:38:16.241Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Counter.razor",
               "DocumentMoniker": "C:\\Repon\\OPF_R - Newton\\Demo\\BlazorNumberAPI\\BlazorAPI\\Pages\\Counter.razor",
               "RelativeDocumentMoniker": "BlazorAPI\\Pages\\Counter.razor",

@@ -1,0 +1,1 @@
+C:\Repon\OPF_R - Newton\Demo\BlazorNumberAPI\BlazorAPI\wwwroot\appsettings.json
