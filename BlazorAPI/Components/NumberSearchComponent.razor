@@ -1,0 +1,99 @@
+﻿@inject NumberService NumberService
+
+<div class="input-group mb-3">
+
+@*     Input fält för att ange ett eget nummer, denna binds till variabel number  *@
+ <input @bind="number" type="text" class="form-control " placeholder="Enter phone number" aria-label="Phone number" aria-describedby="button-addon2">
+    <div class="input-group-append">
+        @*     Knapp anropar funktionen ValidateNumber som matar NumberService-funktionen med rätt data  *@
+        <button @onclick="ValidateNumber" class="btn btn-info" type="button" id="button-addon2">Search</button>
+    </div>
+</div>
+
+@*     Bootstrap-mall för en tabell, kolumner och rader. Nullchecks för redundans  *@
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Local Format</th>
+            <th scope="col">Country</th>
+            <th scope="col">Favourite</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (retrievedNumber != null)
+        {
+            <tr>
+                <th scope="row">1</th>
+                <td>@retrievedNumber.Local_Format</td>
+                <td>@retrievedNumber.Country_Name</td>
+                <td>
+                    <svg style="cursor:pointer" @onclick="ToggleFavourite" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#19a12b" d="M20 7.423v10.962q0 .69-.462 1.153T18.384 20H5.616q-.691 0-1.153-.462T4 18.384V5.616q0-.691.463-1.153T5.616 4h10.961zm-8.004 9.115q.831 0 1.417-.582T14 14.543t-.582-1.418t-1.413-.586t-1.419.581T10 14.535t.582 1.418t1.414.587M6.769 9.77h7.423v-3H6.77z" /></svg>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<button @onclick="ToggleFavouriteTable" class="btn btn-info" type="button" id="button-addon2">Show favourites</button>
+@if (favourites)
+{
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Local Format</th>
+                <th scope="col">Country</th>
+                <th scope="col">Favourite</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (NumberModel number in NumberService.ListOfFavourites)
+                @if (number != null)
+                {
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>@number.Local_Format</td>
+                        <td>@number.Country_Name</td>
+                        <td>
+                            <svg style="cursor:pointer" @onclick="ToggleFavourite"
+                                 xmlns="http://www.w3.org/2000/svg"
+                                 width="24"
+                                 height="24"
+                                 viewBox="0 0 24 24">
+                                <path fill="#e31c1c" d="m9.4 15.808l2.6-2.6l2.6 2.6l.708-.708l-2.6-2.6l2.6-2.6l-.708-.708l-2.6 2.6l-2.6-2.6l-.708.708l2.6 2.6l-2.6 2.6zM7.616 20q-.691 0-1.153-.462T6 18.384V6H5V5h4v-.77h6V5h4v1h-1v12.385q0 .69-.462 1.153T16.384 20z" />
+                            </svg>
+                        </td>
+                    </tr>
+                }
+        </tbody>
+    </table>
+}
+else
+{
+    <h3>favourites listan är infälld</h3>
+}
+
+
+@code {
+    bool favourites;
+
+    string number;
+    NumberModel retrievedNumber;
+
+    public async Task ToggleFavouriteTable()
+    {
+        favourites = !favourites;
+    }
+
+    public async Task ValidateNumber()
+    {
+        retrievedNumber = await NumberService.GetNumber(number);
+    }
+
+    public async Task ToggleFavourite()
+    {
+        retrievedNumber.IsFavourite = !retrievedNumber.IsFavourite;
+        NumberService.ManageFavourites(retrievedNumber);
+    }
+}
